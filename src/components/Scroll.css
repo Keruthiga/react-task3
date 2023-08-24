@@ -1,0 +1,8 @@
+.city-routing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+.city-routing a{
+    text-decoration: none;
+}
