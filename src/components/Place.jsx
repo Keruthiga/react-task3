@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Button, CardGroup } from 'react-bootstrap'; 
-//import Cards from './Cards';
 
 
 
@@ -325,7 +324,7 @@ return (
         {containerData.map((data, index) => (
             <div className="container" key={index}>
                 <div className="row">
-                    <h3>{data.heading}</h3>
+                    <h3  id={data.url}>{data.heading}</h3>
                     <div className="col-xl-6 col-lg-6 col-md-6">
                         <img src={data.imgSrc} alt="img" className="img-fluid" />
                     </div>
@@ -339,14 +338,14 @@ return (
                         </p>
                     </div>
                     <h3 style={{ textTransform: "capitalize", textAlign: "center", margin: "20px 0" }}>{data.must}</h3>
-                    <CardGroup>
+                    <CardGroup >
                         {data.card.map((card, cardIndex) => (
                             <Card key={cardIndex} className="border mb-4" style={{ marginRight: "10px" ,width:"16rem"}}>
-                                <Card.Img variant="top h-100" src={card.imageSrc} style={{height:"200px", objectFit:"cover"}} />
+                                <Card.Img variant="top" src={card.imageSrc} style={{height:"200px", objectFit:"cover"}} />
                                 <Card.Body>
                                     <Card.Title>{card.title}</Card.Title>
                                     <Card.Text>{card.text}</Card.Text>
-                                    <Button variant="primary">Read More</Button>
+                                    <Button variant="primary" >Read More</Button>
                                 </Card.Body>
                             </Card>
                         ))}
