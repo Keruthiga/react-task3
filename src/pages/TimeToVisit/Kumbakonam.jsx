@@ -70,46 +70,9 @@ function Kumbakonam() {
                             </div>
                             </div>
 
-                            
-                            {/* <Card style={{ width: '90%', height: '26rem', alignItems: 'end', border: 'none', boxShadow: "0px 0px 6px rgba(0, 0, 0, 0.3)", borderRadius: '10px' }}>
-                                <Card.Header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                    <h4 style={{ textTransform: 'capitalize', fontWeight: 'bold', textAlign: "center" }}>More about best time to travel to &nbsp;{data.placeHead}</h4>
-                                    <button type="button" className="btn-close" aria-label="Close" onClick={handleCloseOffcanvas}></button>
-                                </Card.Header>
-                                <CardGroup style={{ padding: "0px 50px", border: "none", marginTop: '1rem' }}>
-                                    <Card style={{ marginRight: '1rem', height: '16rem', border: 'none' }}>
-                                        <Card.Img variant="top" src={data.cardImg1} style={{ height: '190px' }} />
-                                        <Card.Body>
-                                            <Card.Text style={{ textAlign: "center" }}>
-                                                {data.cardTextP1} <br/> Source
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
-                                    <Card style={{ marginRight: '1rem', height: '16rem', border: 'none' }}>
-                                        <Card.Img variant="top" src={data.cardImg2} style={{ height: '190px' }} />
-                                        <Card.Body>
-                                            <Card.Text style={{ textAlign: "center" }}>
-                                                {data.cardTextP2} <br/> Source
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
-                                    <Card style={{ height: '16rem', border: 'none' }}>
-                                        <Card.Img variant="top" src={data.cardImg3} style={{ height: '190px' }} />
-                                        <Card.Body>
-                                            <Card.Text style={{ textAlign: "center" }}>
-                                                {data.cardTextP3} <br/>Source
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
-                                </CardGroup>
-                                <Card.Footer style={{ border: 'none', margin: '0'}}>
-                                    <Button variant="secondary" style={{ marginRight: '15px' }} onClick={handleCloseOffcanvas}>Close</Button>
-                                    <Button variant="primary" style={{  marginRight: '15px' }} onClick={handleShowOffcanvas}>Save Changes</Button>
-                                </Card.Footer>
-                            </Card> */}
                             <Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas} placement='end'>
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title><h3 style={{ textAlign: 'center' }}>Best time to visit in {data.placeHead}</h3></Offcanvas.Title>
+                                <Offcanvas.Title><h3 style={{ textAlign: 'center',fontWeight:'400' }}>Best time to visit in {data.placeHead}</h3></Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <h6 style={{ fontWeight: 'bold', marginTop: '45px' }}>{data.offHeadText1}</h6>

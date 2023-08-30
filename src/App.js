@@ -6,6 +6,7 @@ import Home from './Home';
 import PlacesToVisit from './pages/PlacesToVisit';
 import './App.css';
 import TimeToVisit from './pages/TimeToVisit';
+import Food from './pages/Food';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             <Nav.Link  > <Link to={'/Timetovisit'} className='text-white text-decoration-none fw-bold'>Best Time To Visit</Link> </Nav.Link>
             <Nav.Link  > <Link className='text-white text-decoration-none fw-bold'>Packages</Link> </Nav.Link>
             <Nav.Link  > <Link className='text-white text-decoration-none fw-bold'>Destination</Link> </Nav.Link>
-            <Nav.Link  > <Link className='text-white text-decoration-none fw-bold'>Food</Link> </Nav.Link>
+            <Nav.Link  > <Link to={'./Food'} className='text-white text-decoration-none fw-bold'>Food</Link> </Nav.Link>
           </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -28,6 +29,7 @@ function App() {
       <Route path='/' element={<Home />}/>
       <Route path='/Places' element={<PlacesToVisit />}/>
       <Route path='/Timetovisit' element={<TimeToVisit/>}/>
+      <Route path='/Food' element={<Food/>} />
     </Routes>   
     </>
   );

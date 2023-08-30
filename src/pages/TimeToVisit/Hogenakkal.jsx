@@ -71,7 +71,7 @@ function Hogenakkal() {
                             </div>
                             <Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas} placement='end'>
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title><h3 style={{ textAlign: 'center' }}>Best time to visit in {data.placeHead}</h3></Offcanvas.Title>
+                                <Offcanvas.Title><h3 style={{ textAlign: 'center',fontWeight:'400' }}>Best time to visit in {data.placeHead}</h3></Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <h6 style={{ fontWeight: 'bold', marginTop: '45px' }}>{data.offHeadText1}</h6>

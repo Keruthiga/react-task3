@@ -47,7 +47,7 @@ const timeData = [
                             <div className="modal show" style={{ display: "block",position: "relative"}}>
                                 <Modal.Dialog style={{ width: "800px" }} className="ms-0 pr-0">
                                 <Modal.Header closeButton>
-                                    <Modal.Title className=" text-center me-3 fw-bolder">More About Best Time To Travel To  &nbsp;{data.placeHead}</Modal.Title>
+                                    <Modal.Title className=" text-center me-3 fw-bolder">More About Best Time To Travel To  &nbsp;Madurai</Modal.Title>
                                 </Modal.Header>
                                 <Modal.Body className="row  pe-5" style={{padding:'20px 50px'}}>
                                         <div className="col text-center">
@@ -72,7 +72,7 @@ const timeData = [
                             </div>
                                 <Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas}>
                                 <Offcanvas.Header closeButton>
-                                    <Offcanvas.Title><h3 style={{ textAlign: 'center' }}>Best time to visit in {data.placeHead}</h3></Offcanvas.Title>
+                                    <Offcanvas.Title><h3 style={{ textAlign: 'center',fontWeight:'400' }}>Best time to visit in &nbsp; Madurai</h3></Offcanvas.Title>
                                 </Offcanvas.Header>
                                 <Offcanvas.Body>
                                     <h6 style={{ fontWeight: 'bold', marginTop: '45px' }}>{data.offHeadText1}</h6>

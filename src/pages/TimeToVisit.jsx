@@ -1,6 +1,6 @@
 import React from 'react'
-import img1 from '../Home/Chennai.jpeg'
-import img2 from './Images/Climate.jpeg'
+import img1 from './Images/Climate.jpeg'
+import img2 from './Images/image.jpeg'
 import img3 from './Images/image1.jpeg'
 import img4 from './Images/image2.jpeg'
 import { Accordion } from 'react-bootstrap'
