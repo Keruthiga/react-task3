@@ -1,5 +1,4 @@
 import React from 'react'
-//import image1 from '../Home'
 
 const placesData = [
     {
@@ -432,13 +431,13 @@ function PlacesToVisit1() {
                     <h3 style={{textAlign:"center"}}>Tourist Places Visit</h3>
                     <br />
                     {city.data.map((data, dataIndex) => (
-                        <div className='row mt-3' key={dataIndex} style={{justifyContent:"center"}}>
+                        <div className='row mt-5' key={dataIndex} style={{justifyContent:"center"}}>
                             {dataIndex % 2 === 0 ? (
                                 <>
                                     <div className="col-xl-3 col-lg-3 col-md-3 ">
                                         <img src={data.imageSrc} alt="img" className="img-fluid " style={{height:"19rem", alignItems:"center"}}/>
                                     </div>
-                                    <div className="col-xl-9 col-lg-9 col-md-9" style={{ alignItems: 'stretch' }}>
+                                    <div className="col-xl-9 col-lg-9 col-md-9" style={{ alignItems: 'center' }}>
                                         <h6 style={{fontWeight:'bold' }}>{data.place}</h6>
                                         <p style={{ textAlign: 'justify', marginBottom: '8px', marginLeft: '10px' }}>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.describe1}<br/><br/>
@@ -448,7 +447,7 @@ function PlacesToVisit1() {
                                 </>
                             ) : (
                                 <>
-                                    <div className="col-xl-9 col-lg-9 col-md-9 " style={{ alignItems: 'stretch' }}>
+                                    <div className="col-xl-9 col-lg-9 col-md-9 " style={{ alignItems: 'center' }}>
                                         <h6 style={{ marginTop: '15px', marginBottom: '15px',fontWeight:'bold' }}>{data.place}</h6>
                                         <p style={{ textAlign: 'justify', marginBottom: '20px', marginLeft: '10px' }}>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.describe1}<br /><br/>
